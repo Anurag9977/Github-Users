@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-content-center {
+    @apply mx-20 md:mx-28 lg:mx-40 xl:mx-48;
+  }
+  .text-primary {
+    @apply text-[#00BFA6];
+  }
+  .border-primary {
+    @apply border-[#00BFA6];
+  }
+  .bg-primary {
+    @apply bg-[#00BFA6];
+  }
+  .bg-primary-hover {
+    @apply bg-[#269587];
+  }
+  .chart-style {
+    svg {
+      border-radius: 0.375rem !important;
+      text {
+        font-family: "Rubik", "sans-serif" !important;
+      }
+    }
+  }
+}
+
+/* SCROLLBAR CSS */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
