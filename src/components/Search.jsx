@@ -25,9 +25,9 @@ const Search = () => {
       <h2 className="text-center my-4 text-red-500 font-content tracking-wider text-base">
         {error.show && error.message}
       </h2>
-      <div className="flex justify-center items-center gap-x-8">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-x-8 gap-y-4">
         <form
-          className="flex w-3/5 gap-x-8 font-content"
+          className="flex w-full md:w-3/5 gap-x-4 md:gap-x-8 font-content"
           onSubmit={handleSubmit}
         >
           <input
